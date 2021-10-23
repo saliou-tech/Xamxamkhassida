@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'acceuil',
+    loadChildren: () => import('./screens/acceuil/acceuil.module').then( m => m.AcceuilPageModule)
+  },
 ];
 
 @NgModule({
