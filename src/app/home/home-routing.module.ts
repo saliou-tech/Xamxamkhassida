@@ -16,8 +16,19 @@ const routes: Routes = [
           ),
       },
       {
+        path: 'quran',
+        loadChildren: () => import('../screens/quran/quran.module').then( (m)=> m.QuranPageModule)
+      },
+
+
+      {
         path: '',
         redirectTo: 'acceuil',
+        pathMatch: 'full',
+      },
+      {
+        path: '',
+        redirectTo: 'quran',
         pathMatch: 'full',
       },
     ]

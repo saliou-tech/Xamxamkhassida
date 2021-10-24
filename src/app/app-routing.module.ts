@@ -15,6 +15,10 @@ const routes: Routes = [
     path: 'acceuil',
     loadChildren: () => import('./screens/acceuil/acceuil.module').then( m => m.AcceuilPageModule)
   },
+  {
+    path: 'quran',
+    loadChildren: () => import('./screens/quran/quran.module').then( m => m.QuranPageModule)
+  },
 ];
 
 @NgModule({
