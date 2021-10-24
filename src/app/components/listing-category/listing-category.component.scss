@@ -1,0 +1,13 @@
+ion-icon {
+  color: green;
+}
+.top  {
+  margin-top: 0;
+  width: 100%;
+}
+.espace {
+  margin-inline-start: 20px;
+}
+ion-icon[slot=end] {
+  margin-inline-start: 100px;
+}
