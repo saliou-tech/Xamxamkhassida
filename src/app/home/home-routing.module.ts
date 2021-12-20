@@ -23,8 +23,10 @@ const routes: Routes = [
         path: 'quransound',
         loadChildren: () => import('../screens/quransound/quransound.module').then( m => m.QuransoundPageModule)
       },
-
-
+      {
+        path: 'quranlistening',
+        loadChildren: () => import('../screens/quranlistening/quranlistening.module').then( m => m.QuranlisteningPageModule)
+      },
       {
         path: '',
         redirectTo: 'acceuil',
@@ -38,6 +40,11 @@ const routes: Routes = [
       {
         path: '',
         redirectTo: 'quransound',
+        pathMatch: 'full',
+      },
+      {
+        path: '',
+        redirectTo: 'quranlistening',
         pathMatch: 'full',
       },
     ]

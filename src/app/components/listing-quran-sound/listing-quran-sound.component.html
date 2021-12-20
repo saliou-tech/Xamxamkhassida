@@ -1,0 +1,12 @@
+
+<!-- List of Text Items -->
+<ion-list>
+  <ion-item  *ngFor="let item of qurasounds">
+    <ion-label>{{item.titre}}</ion-label>
+    <div  (click)="playSound(item)">
+      <ion-icon name="musical-notes-outline"></ion-icon>
+    </div>
+
+  </ion-item>
+
+</ion-list>

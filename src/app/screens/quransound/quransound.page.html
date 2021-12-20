@@ -1,0 +1,32 @@
+<ion-header mode="ios" id="header">
+  <ion-toolbar>
+    <ion-buttons slot="start" class="ion-color-success">
+      <ion-back-button class="green">quran</ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      <img src="assets/logo.png">
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <!--      <ion-card-subtitle><a href="https://material.angular.io/">XAM XAM </a></ion-card-subtitle>-->
+      <ion-card-title class="top">
+
+      </ion-card-title>
+
+      <img mat-card-image src="assets/logo.png" alt="khassida">
+
+    </ion-card-header>
+
+    <ion-card-content>
+
+      <ion-label class="ion-text-wrap">
+
+      </ion-label>
+    </ion-card-content>
+  </ion-card>
+<app-listing-quran-sound *ngFor="let items of this.quransounds; let i=index" [items]="items" ></app-listing-quran-sound>
+</ion-content>
